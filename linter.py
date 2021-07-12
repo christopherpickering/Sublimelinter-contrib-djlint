@@ -24,7 +24,7 @@ class Djlint(PythonLinter):
     line_col_base = (1, 0)
     multiline = True
     regex = (
-        r"^(?:(?P<error>E\d+)|(?P<warning>W\d+))\s"
+        r"^\s+?(?:(?P<error>E\d+)|(?P<warning>W\d+))\s"
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
