@@ -1,0 +1,8 @@
+SublimeLinter-contrib-radon
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to radon cyclomatic complexity.
+
+[Radon](https://pypi.org/project/radon/) must be installed.
+
+For more information, please see:
+https://github.com/christopherpickering/SublimeLinter-contrib-radon
