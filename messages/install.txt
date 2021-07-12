@@ -1,8 +1,8 @@
-SublimeLinter-contrib-radon
+SublimeLinter-contrib-djlint
 -------------------------------
-This linter plugin for SublimeLinter provides an interface to radon cyclomatic complexity.
+This linter plugin for SublimeLinter provides an interface to djlint, Django template linter.
 
-[Radon](https://pypi.org/project/radon/) must be installed.
+[Djlint](https://pypi.org/project/djlint/) must be installed.
 
 For more information, please see:
-https://github.com/christopherpickering/SublimeLinter-contrib-radon
+https://github.com/christopherpickering/SublimeLinter-contrib-djlint

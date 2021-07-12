@@ -19,7 +19,7 @@ class Djlint(PythonLinter):
 
     cmd = "djlint ${temp_file}"
     defaults = {
-        "selector": "text.html",
+        "selector": "text.html.django",
     }
     line_col_base = (1, 0)
     multiline = True
