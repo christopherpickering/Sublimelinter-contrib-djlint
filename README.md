@@ -20,5 +20,20 @@ pip install djlint
 In order for `djlint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. The docs cover [troubleshooting PATH configuration](http://sublimelinter.readthedocs.io/en/latest/troubleshooting.html#finding-a-linter-executable).
 
 ## Settings
+
+Warnings can be ignored from the sublimelinter settings:
+
+```json
+// SublimeLinter Settings - User
+{
+    "linters": {
+       "djlint": {
+          "ignore": "W013"
+       }
+    }
+}
+
+```
+
 - SublimeLinter settings: http://sublimelinter.readthedocs.org/en/latest/settings.html
 - Linter settings: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
