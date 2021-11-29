@@ -2,7 +2,8 @@
 import re
 
 from SublimeLinter.lint import PythonLinter
-from SublimeLinter.util import STREAM_BOTH
+
+# from SublimeLinter.util import STREAM_BOTH
 
 
 class Djlint(PythonLinter):
@@ -28,7 +29,7 @@ class Djlint(PythonLinter):
     line_col_base = (1, 0)
 
     multiline = True
-    error_stream = STREAM_BOTH
+    # error_stream = STREAM_BOTH
     re_flags = re.IGNORECASE
     regex = (
         r"^\s+?(?:(?P<warning>\w+\d+))\s"
