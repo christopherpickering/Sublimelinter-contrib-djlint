@@ -1,7 +1,7 @@
 """Sublimelinter plugin for djlint."""
 import re
 
-from SublimeLinter.lint import PythonLinter
+from SublimeLinter.lint import WARNING, PythonLinter
 
 
 class Djlint(PythonLinter):
@@ -26,6 +26,7 @@ class Djlint(PythonLinter):
     }
     line_col_base = (1, 0)
 
+    default_type = WARNING
     multiline = False
     re_flags = re.IGNORECASE
     regex = (
