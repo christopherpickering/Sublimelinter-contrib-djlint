@@ -29,7 +29,7 @@ class Djlint(PythonLinter):
     multiline = True
     re_flags = re.IGNORECASE
     regex = (
-        r"^\s+?(?:(?P<warning>\w+\d+))\s"
+        r"^\s+?(?:(?P<code>\w+\d+))\s"
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
