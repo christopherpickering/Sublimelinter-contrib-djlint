@@ -26,10 +26,10 @@ class Djlint(PythonLinter):
     }
     line_col_base = (1, 0)
 
-    multiline = True
+    multiline = False
     re_flags = re.IGNORECASE
     regex = (
-        r"^\s+?(?:(?P<code>\w+\d+))\s"
+        r"[ ]*?(?:(?P<code>\w+\d+))\s"
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
