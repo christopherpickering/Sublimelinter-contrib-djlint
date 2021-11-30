@@ -19,7 +19,7 @@ class Djlint(PythonLinter):
 
     """
 
-    cmd = "djlint ${temp_file} *"
+    cmd = "djlint ${temp_file} ${args}"
     defaults = {
         "selector": "text.html, text.html.django, text.html.jinja2, text.html.njk, text.html.handlebars",
         "--ignore=,": "",
