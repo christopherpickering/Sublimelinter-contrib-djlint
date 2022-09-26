@@ -26,7 +26,8 @@ Warnings can be ignored from the sublimelinter settings:
 {
     "linters": {
        "djlint": {
-          "ignore": "W013"
+          "ignore": "W013",
+          "python": "/path/to/python/3.7.2+/where/you/installed/djlint"
        }
     }
 }
