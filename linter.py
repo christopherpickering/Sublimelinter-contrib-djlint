@@ -34,4 +34,4 @@ class Djlint(PythonLinter):
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
-    temp_suffix = "html"
+    tempfile_suffix = "html"
