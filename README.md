@@ -1,8 +1,6 @@
 SublimeLinter-contrib-djlint
 ================================
 
-[![Build Status](https://travis-ci.com/christopherpickering/SublimeLinter-contrib-djlint.svg?branch=master)](https://travis-ci.com/christopherpickering/SublimeLinter-contrib-djlint)
-
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [djlint](https://pypi.org/project/djlint/) for linting Django Templates.
 
 
