@@ -19,7 +19,7 @@ class Djlint(PythonLinter):
 
     """
 
-    cmd = "djlint ${temp_file} ${args}"
+    cmd = "djlint - ${args}"
     defaults = {
         "selector": "text.html, text.html.base, text.html.django, text.html.jinja2, text.html.njk, text.html.handlebars",
         "--ignore=,": "",
@@ -34,4 +34,3 @@ class Djlint(PythonLinter):
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
-    tempfile_suffix = "html"
