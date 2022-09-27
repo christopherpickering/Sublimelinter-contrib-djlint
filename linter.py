@@ -35,10 +35,4 @@ class Djlint(PythonLinter):
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
-
-    def get_working_dir(self):
-        return (
-            self.context.get("folder")
-            or self.context.get("project_root")
-            or self.context.get("file_path")
-        )
+    working_dir = "$folder"
