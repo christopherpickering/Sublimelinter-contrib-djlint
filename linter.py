@@ -35,4 +35,4 @@ class Djlint(PythonLinter):
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
-    working_dir = "$folder"
+    working_dir = "${file_path}"
