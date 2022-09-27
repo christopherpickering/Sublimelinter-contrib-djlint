@@ -29,8 +29,16 @@ class Djlint(PythonLinter):
     default_type = WARNING
     multiline = False
     re_flags = re.IGNORECASE
+
     regex = (
         r"[ ]*?(?:(?P<code>\w+\d+))\s"
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
+
+    def get_working_dir(self):
+        return (
+            self.context.get("folder")
+            or self.context.get("project_root")
+            or self.context.get("file_path")
+        )
