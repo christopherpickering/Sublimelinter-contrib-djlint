@@ -23,6 +23,7 @@ class Djlint(PythonLinter):
     defaults = {
         "selector": "text.html, text.html.base, text.html.django, text.html.jinja2, text.html.njk, text.html.handlebars",
         "--ignore=,": "",
+        "working_dir": "${file_path}",
     }
     line_col_base = (1, 0)
 
@@ -35,4 +36,3 @@ class Djlint(PythonLinter):
         r"(?P<line>\d+):"
         r"(?P<col>\d+)\s(?P<message>.+)"
     )
-    working_dir = "${file_path}"
